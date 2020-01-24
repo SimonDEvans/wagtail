@@ -33,13 +33,14 @@
 // Desktop styling (override mobile styling):
 @include media-breakpoint-up(sm) {
     .logo {
-        margin: 1em auto;
+        margin: 2em auto;
         text-align: center;
     }
 }
 
 .wagtail-logo-container__mobile {
     position: relative;
+    margin-right: 10px;
 
     .wagtail-logo,
     .wagtail-logo-container__background {
@@ -62,10 +63,7 @@
     }
 
     .wagtail-logo-container-inner {
-        height: 20px;
-        margin-left: 4px;
-        margin-top: 3px;
-        position: absolute;
+        height: 25px;
     }
 
     &:hover {
@@ -75,8 +73,14 @@
 
 .wagtail-logo-container__desktop {
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    background-color: #555;
+    border-radius: 50%;
+
+    .page404__bg & {
+        background-color: transparent;
+    }
 
     .wagtail-logo-container__background {
         position: absolute;
@@ -85,8 +89,8 @@
     }
 
     .wagtail-logo-container-inner {
-        width: 45px;
-        height: 75px;
+        width: 52px;
+        height: 100px;
         margin: auto;
         position: relative;
     }
